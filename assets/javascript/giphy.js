@@ -1,7 +1,7 @@
 var baseURL = "https://api.giphy.com/v1/gifs/search?q=";
 var apiKey = "dc6zaTOxFJmzC";
 var inputVal = "";
-var topics = ["Hero", "Grumpycat", "Babies", "Hacker", "Rainbow", "snarf", "Mom memes"];
+var topics = ["Family Guy", "King of the Hill", "Adventure Time", "Bob's Burgers", "Archer", "Aqua Teen Hunger Force", "Home Movies"];
 var queryURL = "";
 var imgURL = "";
 
