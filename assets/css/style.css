@@ -3,7 +3,7 @@
 }
 
 body {
-	background-image: url("../images/wood.jpg");
+	
 	background: linear-gradient(to bottom right, #E33574, #204497);
     min-height: 100vh;
     height: 100%;
@@ -12,6 +12,7 @@ body {
 }
 
 .header {
+    background-image: url("../images/curtains");
     height: 15vh;
     font-size: 3rem;
     font-family: Lato;
