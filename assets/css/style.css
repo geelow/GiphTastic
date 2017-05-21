@@ -75,5 +75,6 @@ h2 {
 	margin-right: 10px;
 	height: 200px;
 	width: 250px;
+	display: inline-grid;
 }
 
