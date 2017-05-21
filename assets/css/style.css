@@ -52,6 +52,7 @@ h2 {
 .allButtons {
 	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-user-select: none
 	box-shadow:inset 0px 1px 0px 0px #caefab;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
 	background:-moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);

@@ -5,6 +5,26 @@ var topics = ["Hero", "Grumpycat", "Babies", "Hacker", "Rainbow", "snarf", "Mom 
 var queryURL = "";
 var imgURL = "";
 
+/* ------------------------------------------------------------------------ */
+
+/* clicking 'submit' creates a new topic button */
+
+$("#submit").on('click', function(event) {
+    event.preventDefault();
+
+  inputVal = $("#newSearch").val().trim();
+
+  var newButton = $("<button>");
+  newButton.addClass("allButtons");
+  newButton.attr("data", inputVal);
+  newButton.text(inputVal);
+  $("#buttons").append(newButton).append(" ");
+
+});
+
+
+/* adding new buttons, adding new topics to the topics array, and adding a space between new buttons */
+
 function createButtons() {
 	
 	for (var i=0; i<topics.length; i++) {
@@ -17,18 +37,8 @@ function createButtons() {
 }
 createButtons();
 
-$("#submit").on('click', function(event) {
-    event.preventDefault();
 
-	inputVal = $("#newSearch").val().trim();
-
-	var newButton = $("<button>");
-	newButton.addClass("allButtons");
-	newButton.attr("data", inputVal);
-	newButton.text(inputVal);
-	$("#buttons").append(newButton).append(" ");
-
-});
+/* when a button is clicked, the api fetches 6 giphs and displays them as still images */
 
 $(document).on("click", ".allButtons", function(event) {
     event.preventDefault();
@@ -59,6 +69,8 @@ $(document).on("click", ".allButtons", function(event) {
   	});
   });
 
+
+/* if the image is clicked, the gif will animate */
 $(document).on("click", ".newImg", function(event) {
     event.preventDefault();
 
