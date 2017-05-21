@@ -15,7 +15,6 @@ function createButtons() {
 		$("#buttons").append(newButton).append(" ").append(" ");
 	}
 }
-
 createButtons();
 
 $("#submit").on('click', function(event) {
@@ -35,7 +34,7 @@ $(document).on("click", ".allButtons", function(event) {
     event.preventDefault();
 
     var topic = $(this).attr("data");
-    queryURL = baseURL + "q=" + topic +"pg&limit=6&api_key=" + apiKey;
+    queryURL = baseURL + "q=" + topic +"&limit=6&api_key=" + apiKey;
     console.log(queryURL);
     $("#showImage").empty();
 
