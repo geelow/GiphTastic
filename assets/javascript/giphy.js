@@ -1,4 +1,4 @@
-var baseURL = "https://api.giphy.com/v1/gifs/search?";
+var baseURL = "https://api.giphy.com/v1/gifs/search?q=";
 var apiKey = "dc6zaTOxFJmzC";
 var inputVal = "";
 var topics = ["Hero", "Grumpycat", "Babies", "Hacker", "Rainbow", "snarf", "Mom memes"];
@@ -34,7 +34,7 @@ $(document).on("click", ".allButtons", function(event) {
     event.preventDefault();
 
     var topic = $(this).attr("data");
-    queryURL = baseURL + "q=" + topic +"&limit=6&api_key=" + apiKey;
+    queryURL = baseURL + topic +"&limit=6&api_key=" + apiKey;
     console.log(queryURL);
     $("#showImage").empty();
 
