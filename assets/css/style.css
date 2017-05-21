@@ -13,6 +13,12 @@ label{
 	font-weight:bold;
 }
 
+h2 {
+	color: white;
+	font-family:Arial;
+	font-weight:bold;
+}
+
 .jumbotron {
 	background-image: url("../images/curtains.jpg");
 	background-image: 
