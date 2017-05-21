@@ -1,7 +1,7 @@
 var baseURL = "https://api.giphy.com/v1/gifs/search?";
 var apiKey = "dc6zaTOxFJmzC";
 var inputVal = "";
-var topics = ["Hero", "Grumpycat", "Babies", "Hacker", "Rainbow"];
+var topics = ["Hero", "Grumpycat", "Babies", "Hacker", "Rainbow", "snarf", "Mom memes"];
 var queryURL = "";
 var imgURL = "";
 

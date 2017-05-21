@@ -31,7 +31,17 @@ h2 {
 	color: white;
 }
 
+#top {
+	align-items: center;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 100%;
+}
 
+.actionButtons {
+	
+	margin-bottom: 6px;
+}
 
 #buttons {
 	height: 200px;
@@ -67,14 +77,14 @@ h2 {
 }
 
 #newSearch {
-	width: 250px;
+	width: 150px;
 }
 
 .newImg {
 	margin-top:10px;
 	margin-right: 10px;
 	height: 200px;
-	width: 250px;
+	width: 200px;
 	display: inline-grid;
 }
 
