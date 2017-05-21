@@ -18,40 +18,41 @@
 
 </head>
 <body>
-	<div class="jumbotron">
+	<div class="header">
 	      <h1 class="text-center"><strong>GiphTastic</strong></h1>
 	</div>
   	
   	<div class="container">
-		
-	    <div class="row" id="buttons" id="top">
-	    	<div class="col-sm-12">
+	    <div class="row">
+	    	<div class="col-sm-12" id="queries">
 	    	</div>
 			
 	    </div>
 		<br>
 	    <div class="row">
-			<div class="col-sm-3" id="actionButtons">
-		            <section class="form-group">
-		                <label for="newSearch">Enter topic</label>
-		                <input type="text" class="form-control" id="newSearch">
-		            </section>
-			
-	            
-	            <button type="submit" class="myButton" id="submit">Submit</button>
+			<div class="col-md-12">
+		      	<form>
+		        	<label for="newSearch" class="search-label">Enter topic</label>
+		       		<input type="text" id="search-input" onkeydown="searchKeypress(event)">
+	            	<button id="search-button" onclick="searchGiphy(event)">Submit</button>
+           		</form>
            	</div>
 
-	    	<div class="col-sm-6" id="showImage">
+	    	<div class="col-sm-12 col-lg-9">
+	    		<div id="giphy-results">
+	    		</div>
 	    	</div>
-		<!--if there is time, move some of the response to a second column -->
-	    	<div class="col-sm-3" id="clickImage">
-	    		<h2>If you click an image, fun things should occur...
-				<br>
-				<br>By the way, this is <strong>not</strong> a button.
-	    		</h2>
-	    	</div>
+		
+	    	<div class="col-sm-12 col-lg-3">
+	    		<div class="click-callout">
+	    			<h2>If you click an image, fun things should occur...
+					<br>
+					<br>By the way, this is <strong>not</strong> a button.
+	    			</h2>
+	    		</div>
 
-	 </div>
+	 		</div>
+	</div>
 	
   	<script src="https://code.jquery.com/jquery.js"></script>
 
